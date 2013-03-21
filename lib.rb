@@ -18,12 +18,13 @@ def get_authorization(message, publicKey, privateKey)
   
   return auth
 end
-def get_response(message)
+
+def get_json_response(message)
   caleb_auth = "234328c5-1f79-8738-05a1-d132f871d075--50b6428b-8ef0-4c43-a711-6d25e13fc362BF-13-A5-6E-3E-E6-26-BB-2E-0D-FC-F4-52-35-9F-70"
   auth = caleb_auth
   
-  caleb_publicKey = "234328c5-1f79-8738-05a1-d132f871d075"
-  caleb_privateKey = "50b6428b-8ef0-4c43-a711-6d25e13fc362BF-13-A5-6E-3E-E6-26-BB-2E-0D-FC-F4-52-35-9F-70"
+  publicKey = "234328c5-1f79-8738-05a1-d132f871d075"
+  privateKey = "50b6428b-8ef0-4c43-a711-6d25e13fc362BF-13-A5-6E-3E-E6-26-BB-2E-0D-FC-F4-52-35-9F-70"
   
   authorization = get_authorization(message, publicKey, privateKey)
 
